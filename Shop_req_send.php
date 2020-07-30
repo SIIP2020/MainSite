@@ -34,14 +34,14 @@ session_start();
 										<p class="text-center font-weight-light my-4">We will send you Login details as soon as we have verified your details.</p>
 									</div>
                                     <div class="card-body">
-                                        <form action="includes/signup.inc.php" method="post">
+                                        <form action="includes/shop_req.php" method="post">
                                             <div class="form-group">
 												<label class="form-label" for="inputEmailAddress">Owner Name*</label>
-												<input class="form-control py-3" id="inputName" type="text" name="name" placeholder="Owners's Name">
+												<input class="form-control py-3" id="inputOwner" type="text" name="owner_nm" placeholder="Owners's Name">
 											</div>
                                             <div class="form-group">
                                                 <label class="form-label" for="inputEmailAddress">Shop Name*</label>
-                                                <input class="form-control py-3" id="inputEmailAddress" type="text" name="email" placeholder="Enter Shop Name">
+                                                <input class="form-control py-3" id="inputShopName" type="text" name="shop_nm" placeholder="Enter Shop Name">
                                             </div>
                                              <div class="form-group">
                                                 <label class="form-label" for="inputEmailAddress">Email*</label>
@@ -49,21 +49,20 @@ session_start();
                                             </div>
                                               <div class="form-group">
 												<label class="form-label" for="inputEmailAddress">Shop GST Number*</label>
-												<input class="form-control py-3" id="inputGST" type="text" name="name" placeholder="Shop GST Number">
+												<input class="form-control py-3" id="inputGST" type="text" name="gst_no" placeholder="Shop GST Number">
 											</div>
                                             <div class="form-group">
                                                 <label class="form-label" for="inputEmailAddress">Phone*</label>
-                                                <input class="form-control py-3" id="inputphone" type="text" name="password" placeholder="Enter Phone Number">
+                                                <input class="form-control py-3" id="inputphone" type="text" name="phone" placeholder="Enter Phone Number">
                                             </div>
                                              <div class="form-group">
                                                 <label class="form-label" for="inputEmailAddress">Address*</label>
-                                                <input class="form-control py-3" id="inputAddress" type="text" placeholder="Enter Address">
+                                                <input class="form-control py-3" id="inputAddress" type="address" name="address" placeholder="Enter Address">
                                             </div>
                                             <div>
                                                 <button  type="submit" name="register">Send Request</button>
 											</div>
                                             <br>
-                                             <h6>Already a Member..??  <a  href="login.html">Click Here</a></h6>
 
                                         </form>
 
